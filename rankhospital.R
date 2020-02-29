@@ -28,8 +28,8 @@ rankhospital <- function(state, outcome, num = "best") {
         # convert the outcome value
         suboutcome.data[,2]=suppressWarnings(as.numeric(suboutcome.data[,2]))
         
-        # order data by the outcome frame (descending) and by
-        # the hospital name (ascending)
+        # order data by the outcome frame and by
+        # the hospital name ((descending))
         outcomeSorted<-order(suboutcome.data[,2],
                              suboutcome.data[,1],
                              method="radix",
